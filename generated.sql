@@ -1,14 +1,14 @@
-CREATE DATABASE IF NOT EXISTS `MicroShop`;
+CREATE DATABASE IF NOT EXISTS `microshop`;
 
-DROP TABLE IF EXISTS `MicroShop`;
-CREATE TABLE `MicroShop`.`customer` (
+DROP TABLE IF EXISTS `microshop`;
+CREATE TABLE `microshop`.`customer` (
 	`id` INT NOT NULL,
 	PRIMARY KEY (`id`),
 	`name` VARCHAR(45) NULL
 );
 
-DROP TABLE IF EXISTS `MicroShop`;
-CREATE TABLE `MicroShop`.`order` (
+DROP TABLE IF EXISTS `microshop`;
+CREATE TABLE `microshop`.`order` (
 	`id` INT NOT NULL,
 	PRIMARY KEY (`id`),
 	`date` VARCHAR(45) NULL,
@@ -16,8 +16,8 @@ CREATE TABLE `MicroShop`.`order` (
 	`customer_id` INT NULL
 );
 
-DROP TABLE IF EXISTS `MicroShop`;
-CREATE TABLE `MicroShop`.`order_line` (
+DROP TABLE IF EXISTS `microshop`;
+CREATE TABLE `microshop`.`orderline` (
 	`id` INT NOT NULL,
 	PRIMARY KEY (`id`),
 	`order_id` INT NULL,
@@ -26,8 +26,8 @@ CREATE TABLE `MicroShop`.`order_line` (
 	`total` INT NULL
 );
 
-DROP TABLE IF EXISTS `MicroShop`;
-CREATE TABLE `MicroShop`.`product` (
+DROP TABLE IF EXISTS `microshop`;
+CREATE TABLE `microshop`.`product` (
 	`id` INT NOT NULL,
 	PRIMARY KEY (`id`),
 	`name` VARCHAR(45) NULL,
